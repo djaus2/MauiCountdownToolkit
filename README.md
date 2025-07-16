@@ -38,3 +38,32 @@
      - videogreen.svg _(default)_
      - videored.svg
      - veideoblack.svg
+
+     ## Usage Example
+     ```csharp
+     using MauiCountdownToolkit.Views;
+         ...
+         ...
+         CountdownPopup? CountdownPopup = null;
+         ...
+         ...
+        int delay = //Get from app properties etc.
+        if (delay > 0)
+        {
+            CountdownPopup = new CountdownPopup(delay,null, "dotnet_athletics.jpg", 64,"Starting...");
+            await this.ShowPopupAsync(CountdownPopup);
+                      
+            bool result = await CountdownPopup.Result;
+            CountdownPopup = null;
+            if (result)
+                //Call process to be triggered after countdown
+        }
+        ...
+        ...
+    //Elsewhere eg if process manual start button is pressed before countdown fimishes.
+        if (CountdownPopup != null)
+        {
+            // If a countdown popup is active, cancel it
+            CountdownPopup.Cancel();
+        }
+     ```

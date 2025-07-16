@@ -13,10 +13,7 @@
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
 
 
-
-
-
-
+    
     <!-- Display name -->
     <AssemblyTitle>MauiCountdownToolkit</AssemblyTitle>
 
