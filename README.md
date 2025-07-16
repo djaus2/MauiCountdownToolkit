@@ -33,7 +33,7 @@
      ***The RainbowCountdownPopup in action using gunx.svg icon***
      ---
      ```*``` Icons embedded in the library:  
-     Can be used with inclusion in the host app:
+     Can be used without instantiation (inclusion) in the host app:
      - gunx.svg
      - videogreen.svg _(default)_
      - videored.svg
