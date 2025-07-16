@@ -10,7 +10,7 @@
    `MauiCountdownToolkit.Views.CountdownPopup`   Has one solid color border (default red).  
    `MauiCountdownToolkit.Views.RainbowCountdownPopup` Has rainbow border.
 - NuGet Package:  
-   `MauiCountdownToolkit`<-- Not there yet
+   [djaus2MauiCountdownToolkit](https://www.nuget.org/packages/djaus2MauiCountdownToolkit/)
 - Interface:
    ```cs
     public CountdownPopup(int seconds, SolidColorBrush? color = null, string iconSource = "videogreen.svg", int iconWidthHeight = 100, string initialText = "Starting...")
@@ -27,8 +27,9 @@
 
    - **Nb:** gunx.svg, the default icon is in the lib
      - You can use your own SVG icon from an app using this lib.*
-     - Make sure its property is set to MauiImage.
-     ![Popup1](./Popup1.png)  
+     - Make sure its property is set to MauiImage.  
+![Countdown Popup](https://raw.githubusercontent.com/djaus2/MauiCountdownToolkit/master/Popup1.png)
+
      ***The RainbowCountdownPopup in action using gunx.svg icon***
      ---
      ```*``` Icons embedded in the library:  
