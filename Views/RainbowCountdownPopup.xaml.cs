@@ -2,7 +2,7 @@ using CommunityToolkit.Maui.Views;
 
 namespace MauiCountdownToolkit.Views;
 
-public partial class RainbowCountdownPopup : Popup
+public partial class RainbowCountdownPopup : Popup, ICountdownPopup
 {
     private int _secondsRemaining;
     private IDispatcherTimer _timer;

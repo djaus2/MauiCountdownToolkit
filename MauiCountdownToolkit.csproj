@@ -21,8 +21,8 @@
     <AssemblyGuid>{DD154AF0-1BFD-48ED-B74A-7266CCE22634}</AssemblyGuid>
 
     <!-- Versions -->
-    <AssemblyInformationalVersion>1.0.1</AssemblyInformationalVersion>
-    <AssemblyVersion>1.0.1</AssemblyVersion>
+    <AssemblyInformationalVersion>1.0.2</AssemblyInformationalVersion>
+    <AssemblyVersion>1.0.2</AssemblyVersion>
 
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
     <PlatformTarget>ARM64</PlatformTarget>
