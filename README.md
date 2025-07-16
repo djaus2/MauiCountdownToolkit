@@ -60,7 +60,7 @@
         }
         ...
         ...
-    //Elsewhere eg if process manual start button is pressed before countdown fimishes.
+    Elsewhere eg if process manual start button is pressed before countdown fimishes.
         if (CountdownPopup != null)
         {
             // If a countdown popup is active, cancel it
