@@ -12,7 +12,18 @@
     <Nullable>enable</Nullable>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
 
-
+    <!-- NuGet Package Properties -->
+    <PackageId>djaus2MauiCountdownToolkit</PackageId>
+    <Version>1.1.1</Version>
+    <Authors>David Jones</Authors>
+    <Company>Sportronics</Company>
+    <Description>A .NET MAUI library for Android that implements a visual countdown timer.</Description>
+    <Copyright>Copyright 2025 David Jones</Copyright>
+    <PackageTags>maui;android;video;countdown</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/djaus2/MauiCountdownToolkit</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/djaus2/MauiCountdownToolkit.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
 
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -23,16 +34,20 @@
     <AssemblyGuid>{DD154AF0-1BFD-48ED-B74A-7266CCE22634}</AssemblyGuid>
 
     <!-- Versions -->
-    <AssemblyInformationalVersion>1.1.0</AssemblyInformationalVersion>
-    <AssemblyVersion>1.1.0</AssemblyVersion>
+    <AssemblyInformationalVersion>1.1.1</AssemblyInformationalVersion>
+    <AssemblyVersion>1.1.1</AssemblyVersion>
 
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
     <PlatformTarget>ARM64</PlatformTarget>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
 
-
-
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="" />
+  </ItemGroup>
 
 
   <ItemGroup>
