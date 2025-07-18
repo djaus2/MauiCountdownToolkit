@@ -16,7 +16,7 @@ public partial class CountdownPopup : Popup, ICountdownPopup
     /// </summary>
     /// <param name="seconds">Period to count down</param>
     /// <param name="initialText">Initial text to display (Default "Starting...")</param>
-    public CountdownPopup(int seconds, SolidColorBrush? color = null, string iconSource = "videogreen.svg", int iconWidthHeight = 100, string initialText = "Starting...")
+    public CountdownPopup(int seconds, SolidColorBrush? color = null, string iconSource = "", int iconWidthHeight = 100, string initialText = "Starting...")
     {
         InitializeComponent();
         OuterBorder.Stroke = color ?? SolidColorBrush.Red; // Use a default value if color is null
@@ -49,8 +49,13 @@ public partial class CountdownPopup : Popup, ICountdownPopup
         {
             PopupIcon.Source = iconSource;
         }
+        else
+        {
+            // Default icon source if none provided
+            PopupIcon.Source = "videogreen.svg"; // Replace with your default icon
+        }
 
-        PopupIcon.WidthRequest = iconWidthHeight;
+            PopupIcon.WidthRequest = iconWidthHeight;
         PopupIcon.HeightRequest = iconWidthHeight;
 
         CountdownLabel.Text = initialText;

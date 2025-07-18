@@ -29,23 +29,6 @@
     <PlatformTarget>ARM64</PlatformTarget>
   </PropertyGroup>
 
-  <!-- PropertyGroup>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <None Include="README.md" Pack="true" PackagePath="" />
-  </ItemGroup>
-
-  <PropertyGroup>
-    <PackageReleaseNotes>
-      Some fixes for: Can action through static constructor (Create):  V1.1.2
-    </PackageReleaseNotes>
-  </PropertyGroup -->
-
-
-
-
   <ItemGroup>
     <None Remove="Resources\Images\videoblack.svg" />
     <None Remove="Resources\Images\videogreen.svg" />

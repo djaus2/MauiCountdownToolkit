@@ -16,7 +16,7 @@ public partial class RainbowCountdownPopup : Popup, ICountdownPopup
     /// </summary>
     /// <param name="seconds">Period to count  down</param>
     /// <param name="initialText">Initial text to display (Default "Starting...")</param>
-    public RainbowCountdownPopup(int seconds, string iconSource = "videogreen.svg",int IconWidthHeight=100, string initialText= "Starting...")
+    public RainbowCountdownPopup(int seconds, string iconSource = "",int IconWidthHeight=100, string initialText= "Starting...")
     {
 
         InitializeComponent();
@@ -47,6 +47,11 @@ public partial class RainbowCountdownPopup : Popup, ICountdownPopup
         if(!string.IsNullOrEmpty(iconSource))
         {
             PopupIcon.Source = iconSource;
+        }
+        else
+        {
+            // Default icon source if none provided
+            PopupIcon.Source = "videogreen.svg"; // Replace with your default icon
         }
 
         PopupIcon.WidthRequest = IconWidthHeight;
