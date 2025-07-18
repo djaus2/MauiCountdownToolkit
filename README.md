@@ -12,7 +12,7 @@
 - NuGet Package:  
    [djaus2MauiCountdownToolkit](https://www.nuget.org/packages/djaus2MauiCountdownToolkit/)
 
-- V1.1.9 CountDown class Interface  
+### V1.1.3 CountDown class Interface  
 _(using MauiCountdownToolkit)_  
 ```csharp
     static abstract Countdown? Create(ContentPage? Page, CountDownMode Mode = CountDownMode.PopupRed, string IconSource = "", int IconSize = 100, string InitialText = "Starting...");
@@ -34,7 +34,7 @@ _(using MauiCountdownToolkit)_
     PopupRainbow //RainbowCountdownPopup
 ```
 
-- Lower Interface:  
+### Lower Interface _(Previous but will work)_ 
 _(using MauiCountdownToolkit.Views)_  
    ```csharp
     public CountdownPopup(int seconds, SolidColorBrush? color = null, string iconSource = "videogreen.svg", int iconWidthHeight = 100, string initialText = "Starting...")
@@ -51,11 +51,12 @@ _(using MauiCountdownToolkit.Views)_
      ***The RainbowCountdownPopup in action using gunx.svg icon***
      ---
      ```*``` Icons embedded in the library:  
-     Can be used without instantiation (inclusion) in the host app:
+     Can be used without instantiation (inclusion) in the host app:  
+     _Inbuilt icons don't currently work_
      - gunx.svg
      - videogreen.svg _(default)_
      - videored.svg
-     - veideoblack.svg
+     - videoblack.svg
 
 ## Usage Example Version 1.1.0
 ```csharp
@@ -66,7 +67,7 @@ using MauiCountdownToolkit;
 Countdown? countdown = null;
 ...
 ...
-countdown? = Countdown.Create(this,CountDownMode.Red)
+countdown? = Countdown.Create(this,CountDownMode.Red,"video.svg")
 if(countdown != null)
 {
     bool response = await countdown.Wait(10);//10 second countdown
