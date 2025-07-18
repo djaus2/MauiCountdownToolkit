@@ -25,7 +25,6 @@ public class Countdown : Popup, ICountdown
     private CancellationTokenSource? _cts = null;
 
     private ContentPage page;
-    private int delay;
     private string iconSource = "";
     private int iconSize = 100;
     private string initialText = "Starting...";
@@ -73,18 +72,18 @@ public class Countdown : Popup, ICountdown
     /// <summary>
     /// Action the countdown.
     /// </summary>
-    /// <param name="Delay">Countdown time in seconds. Must be GT 0</param>
+    /// <param name="delay">Countdown time in seconds. Must be GT 0</param>
     /// <returns>True iff countdown isn't aborted</returns>
-    public async Task<bool> Wait(int Delay)
+    public async Task<bool> Wait(int delay)
     {
         if (delay > 0)
         {
             // If doing delay here then signal to VideoKapture to not use soft auto start
-            if (mode != CountDownMode.None)
+            if (mode == CountDownMode.None)
             {
                 return false;
             }
-            else if (mode != CountDownMode.Soft)
+            else if (mode == CountDownMode.Soft)
             {
                 _cts = new CancellationTokenSource();
                 var token = _cts.Token;
