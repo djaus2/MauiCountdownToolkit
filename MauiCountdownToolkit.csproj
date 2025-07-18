@@ -12,7 +12,7 @@
     <Nullable>enable</Nullable>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
 
-    <!-- NuGet Package Properties -->
+       <!-- NuGet Package Properties -->
     <PackageId>djaus2MauiCountdownToolkit</PackageId>
     <Version>1.1.1</Version>
     <Authors>David Jones</Authors>
@@ -41,13 +41,9 @@
     <PlatformTarget>ARM64</PlatformTarget>
   </PropertyGroup>
 
-  <PropertyGroup>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-  </PropertyGroup>
 
-  <ItemGroup>
-    <None Include="README.md" Pack="true" PackagePath="" />
-  </ItemGroup>
+
+
 
 
   <ItemGroup>
