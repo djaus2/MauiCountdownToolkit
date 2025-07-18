@@ -13,7 +13,9 @@
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
 
 
-    
+
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <!-- Display name -->
     <AssemblyTitle>MauiCountdownToolkit</AssemblyTitle>
 
@@ -21,19 +23,16 @@
     <AssemblyGuid>{DD154AF0-1BFD-48ED-B74A-7266CCE22634}</AssemblyGuid>
 
     <!-- Versions -->
-    <AssemblyInformationalVersion>1.0.2</AssemblyInformationalVersion>
-    <AssemblyVersion>1.0.2</AssemblyVersion>
+    <AssemblyInformationalVersion>1.1.0</AssemblyInformationalVersion>
+    <AssemblyVersion>1.1.0</AssemblyVersion>
 
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
     <PlatformTarget>ARM64</PlatformTarget>
   </PropertyGroup>
 
- 
 
 
-  <ItemGroup>
-    <None Include="ReadMe.md" Pack="true" PackagePath="" />
-  </ItemGroup>
+
 
 
   <ItemGroup>
