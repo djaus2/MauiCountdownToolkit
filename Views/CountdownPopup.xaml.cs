@@ -47,15 +47,17 @@ public partial class CountdownPopup : Popup, ICountdownPopup
 
         if (!string.IsNullOrEmpty(iconSource))
         {
-            PopupIcon.Source = iconSource;
+            //var src = Countdown.GetIcon(iconSource);
+            PopupIcon.Source = iconSource; // src;
         }
         else
         {
+            //var src = Countdown.GetIcon("videogreen.svg");
+            PopupIcon.Source = "videogreen.svg"; // src;
             // Default icon source if none provided
-            PopupIcon.Source = "videogreen.svg"; // Replace with your default icon
         }
 
-            PopupIcon.WidthRequest = iconWidthHeight;
+        PopupIcon.WidthRequest = iconWidthHeight;
         PopupIcon.HeightRequest = iconWidthHeight;
 
         CountdownLabel.Text = initialText;

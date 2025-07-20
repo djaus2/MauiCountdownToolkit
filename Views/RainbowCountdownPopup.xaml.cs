@@ -43,15 +43,18 @@ public partial class RainbowCountdownPopup : Popup, ICountdownPopup
             {
                 OuterBorder.HeightRequest = newHeight;
             }
-        };
-        if(!string.IsNullOrEmpty(iconSource))
+        }; 
+        
+        if (!string.IsNullOrEmpty(iconSource))
         {
-            PopupIcon.Source = iconSource;
+            //var src = Countdown.GetIcon(iconSource);
+            PopupIcon.Source = iconSource; // src;
         }
         else
         {
+            //var src = Countdown.GetIcon("videogreen.svg");
+            PopupIcon.Source = "videogreen.svg"; // src;
             // Default icon source if none provided
-            PopupIcon.Source = "videogreen.svg"; // Replace with your default icon
         }
 
         PopupIcon.WidthRequest = IconWidthHeight;

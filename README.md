@@ -12,6 +12,11 @@
 - NuGet Package:  
    [djaus2MauiCountdownToolkit](https://www.nuget.org/packages/djaus2MauiCountdownToolkit/)
 
+## Popup Icon issue 2025-07-19
+- Can use Icon from app but not Toolkit embedded versions
+  - 2 Nuget packages tried. Reverting at Version 1.1.6 where app icon works
+
+
 ### V1.1.3 CountDown class Interface  
 _(using MauiCountdownToolkit)_  
 ```csharp

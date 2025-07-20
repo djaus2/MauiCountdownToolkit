@@ -30,6 +30,30 @@ public class Countdown : Popup, ICountdown
     private string initialText = "Starting...";
     private CountDownMode mode = CountDownMode.PopupRed;
 
+    public static ImageSource? GetIcon(string name)
+    {
+        if (string.IsNullOrWhiteSpace(name))
+            return null;
+
+        var assembly = typeof(CountdownIcons).Assembly;
+        var resourceName = $"MauiCountdownToolkit.Resources.Images.{name}";
+
+        try
+        {
+            var stream = assembly.GetManifestResourceStream(resourceName);
+            return stream != null
+                ? ImageSource.FromStream(() => stream!)
+                : null;
+        }
+        catch
+        {
+            // Optional: log or fallback logic
+            return null;
+        }
+    }
+
+
+
     /// <summary>
     /// 
     /// </summary>
